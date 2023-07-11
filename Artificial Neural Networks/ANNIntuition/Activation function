@@ -3,3 +3,14 @@ Activation function
 neuron내부에서 적용되는 함수로
 
 threshold function!!
+
+sigmoid
+rectifier
+hyperbolic tangent
+등의 함수
+특정 위치(0)를 기준으로 0, 1, 혹은 -1,1등의 값 등을 가짐
+공통으론 0의 위치에서 0의 값을 가짐 : 기준점이 있음
+
+그럼 이 함수들은 어떤 역할을 하는가??
+activation function은 뉴런에서 계산된 값 (weight이 포함되어 계산된 합)을 계산시킨 특정한 값이 output에 만족하는지 하지 않는지를 activation function에 넣어 계산하여 0, 1중에 어느 곳에 더 가까운지 계산함
+그래서 0, 1중에 하나를 택하게 됨
