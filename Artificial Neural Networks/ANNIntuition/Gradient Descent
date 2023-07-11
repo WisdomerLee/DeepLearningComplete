@@ -1,0 +1,14 @@
+back propagation!!!
+
+cost function의 gradient descent부분
+cost function의 최소 점을 찾을 때 gradient가 0인 값을 찾아내려 접근할 것임!
+
+그런데.. weight들을 조합이 가능한 모든 경우를 다 계산하려면....? 기하급수적으로 많은 숫자를 계산해야 함.........
+수퍼컴퓨터로 계산을 시도해도 억년이 넘는 시간이 필요함
+
+Gradient Descent라는 방식으로 접근함
+
+cost function의 gradient를 계산
+그럼 gradient의 계산값을 통해 나온 값이 +인지 -인지 확인하고
+해당 파라미터를 조금씩 조절하여 왼쪽, 오른쪽으로 이동하게 함
+값을 조절하여 다시 계산한 cost function의 gradient를 계산하여 다시 +, -를 확인하고 다시 조정(물론 접근하는 값의 변화 폭은 조금씩 줄여나가게 됨)
