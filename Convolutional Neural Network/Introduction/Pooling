@@ -1,0 +1,17 @@
+Pooling??
+Max Pooling
+
+Pooling은 뭘까??
+같은 사진도 회전에 따라 ..
+혹은 서로 다른 자세를 갖고 있는, 혹은 일부 부분만 있는 같은 객체를 인식하게 하고 싶을 때
+
+feature map에서 또 특정 영역을 잘라 그 값 중에 가장 큰 값을 뽑아냄 > pooled feature map으로 변경
+feature map의 가장 큰 값들은 유지됨
+
+이 방식을 쓰면 뒤집어져도, 회전이 되어도 pooled feature map은 같게 나옴
+또한 이미지의 정보를 갖고 있는 데이터의 양 자체도 줄일 수 있음
+parameter를 줄이면> 연산속도가 늘어남!!!
+
+Evaluation of Pooling Operations in Convolutional Architectures for Object Recognition
+
+input image > Convolution : Convolutional layer >Pooling : Pooling layer>
