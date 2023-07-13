@@ -1,0 +1,3 @@
+convolution : integration의 조합
+convolution은 
+f, g라는 함수가 있을 때 f(x)와 g(t-x)의 함수의 곱을 x로 적분한 것!!
