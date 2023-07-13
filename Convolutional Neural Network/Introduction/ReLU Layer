@@ -1,0 +1,20 @@
+ReLU??
+Rectified Linear Unit을 줄인 것
+
+
+image > convolutional layer > rectifier
+convolutional layer에 rectifier 함수를 적용
+그런데 rectifier를 적용시키는 이유는 뭘까??
+image의 non-linearity를 증가시키기 위함
+rectifier는 필터, 혹은 선형적인 부분을 없애는 함수로 동작함
+
+그럼 non-linearity를 증가시키는 이유는???
+그림 자체는 non-linear
+그런데 convolutional layer를 만드는 과정에서(feature map들을 만드는 과정) linearity를 증가시키게 됨
+즉 데이터 전처리에서 증가시킨 linearity를 줄이기 위해 rectifier를 도입
+
+convolutional layer를 이루는 feature map에서는 black, white의 외곽을 인식하는 형태가 되는데 black은 negative, white는 positive쪽이 됨 : 즉 선형적인 부분이 발생함
+그런데 rectifier를 통과하면> black부분이 제거 > 회색, 흰색부분만 남게 됨
+직관적인 형태에서는 이게 어떤 의미인지 알기 어려우나 수학적으로는 매우 중요한 부분이라 함
+ >같은 사물 내에서 밝고 어두운 부분때문에 다른 사물로 인식되는 것을 방지하기 위해서도 필요함
+
