@@ -1,0 +1,13 @@
+Convolutional Nueral Network
+
+사람이 세상을 바라볼 때 : 무엇인지 알아채기 : classifier!(구분 짓기!!가 있음)
+
+Convolutional Neural Network는 초반에는 Aritificial Neural Network보다 이미지의 오브젝트를 구분하는데 문제가 있었으나 
+급격하게 ANN의 오브젝트 구분을 따라잡음...
+
+Image의 pixel을 확인
+흑백 그림이면 그 pixel들은 2D array로 되어있어서 각각 pixel에서의 색깔을 지정하는 숫자를 들고 있음!
+컬러그림이면 각 pixel들은 빛의 3원색을 기준으로 RGB각각의 pixel에서의 각 속성에 해당하는 숫자를 들고 있음 3D array의 형태가 됨
+
+CNN의 동작 형태는
+convolution > max pooling > flattening > full connection의 단계로 구성됨
