@@ -1,0 +1,5 @@
+
+pooling layer > flattening과정을 거쳐 input layer of feature
+
+pooling layer에 있는 pooled feature map은 2차원의 배열로 되어있는데 이것을 1차원의 배열로 변경해주는 것
+flattening
