@@ -1,0 +1,9 @@
+입력으로 image가 들어오면(pixel별 색깔을 표시하는 숫자 배열)
+
+convolution과정을 거쳐 feature map들이 생성되어 그 feature map들로 convolutional layer가 생성되고 
+feature map의 pooling을 통해 max pooling을 거쳐 poolded feature map으로 구성된 pooling layer가 생성
+그리고 flattening을 거쳐 pooled feature map이 1차원의 배열로 변경됨
+
+그럼 1차원의 배열들이 ANN의 neural network의 입력 layer로 전달되고
+그 뒤에 fully connected hidden layer를 거쳐
+output layer를 통해 결과를 내놓게 됨
