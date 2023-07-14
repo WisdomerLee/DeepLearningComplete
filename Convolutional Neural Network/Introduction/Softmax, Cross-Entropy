@@ -1,0 +1,15 @@
+Softmax와 Cross-Entropy
+
+output layer에 있는 neuron끼리는 서로 연결되어있어 서로의 값을 알 수 있는데
+이를 통해 output의 값의 합을 1로 만들어 줄 수 있음(표준, 정규?) : soft max 함수
+
+softmax로 정규화를 하면 > output neuron에 나온 값들의 총 합이 1이 됨
+
+cross entropy: cost function의 한 종류
+mse를 낮추는 게 목표!!(Mean squared error)
+loss function
+
+cross-entropy : mean squared error대신 쓰는 이유가 있을까??
+back propagation에서 output value가 매우 작을 때 cross entropy는 logarithm으로 동작하여 작은 error에 대해 보다 민감하게 반응함!
+
+regression : 
