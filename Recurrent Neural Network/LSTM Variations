@@ -1,0 +1,8 @@
+LSTM Variations
+
+표준 LSTM도 있지만
+
+memory에 더해지는 값 두 개를 reverse로 연결하는 방법
+
+Gated Recurring Units: GRUs로 memory pipe line을 없애고
+유연성은 떨어지지만 값을 전달하는데는 효과적인 것도 있음 (memory pipe line이 별도로 존재하던 것이 사라지므로 성능상의 이점이 있음)
