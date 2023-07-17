@@ -1,0 +1,20 @@
+Vanishing Gradient
+
+lossfunction, 혹은 error를 줄이기 위해 
+
+Gradient를 계산하여 보정하고 다시 gradient를 얻어 그 값이 최소화된 값을 찾아가는 과정이 필요함 (정확도 높이기!!)
+
+feedback을 통해 weight를 다시 보정하여 계산하게 되는데
+문제는 feedback이 계속될수록....
+feedback이 들어가는 같은 layer의 neuron에 back propagation을 통해 weight가 업데이트 되는 과정에서
+gradient도 점차 작아지게 됨... : weight업데이트가 점차 어려워지게 됨
+...
+weight 보정하는 값을 곱해서 업데이트를 하는데 이 값이 작으면 gradient가 점차 작아져 영향력이 사라지게 되고
+weight 보정하는 값이 크면 : gradient를 이동하는 과정 자체가 커져 값이 수렴하지 않게 됨...
+
+그럼 이것들의 문제는 어떻게 해결을??
+
+Exploding Gradient: 
+1.Truncated Backpropagation : backpropagation을 특정 단계에서 끊어주기! : 물론 이렇게하면 update되는 부분에 한계가 발생하게 됨
+2.Penalties : gradient에 penalty를 적용하기
+3.Gradient Clipping : 
