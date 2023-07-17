@@ -1,0 +1,22 @@
+Long Short-Terms Memory
+
+어떻게 등장하게 되었는가??
+LSTM Architecture
+동작 예시
+
+등장이 된 이유
+
+Gradient Vanishing, Gradient Exploding의 문제
+W rec를 계속 보정하면 gradient가 layer를 통과하여 neuron에 전달되는 동안 gradient의 값이 점점 작아지거나(Wrec<1 : vanishing) 감당할 수 없게 커지는(Wrec>1:exploding) 문제가 발생
+이 문제를 해결하기 위한 방법을 고안하던 중에
+Wrec =1로 보정하기!라는 아주 간단한 해결책
+
+물론 실제로 내부에서 보정을 계산하는 식은 여러개의 함수들이 조합되어 좀 더 복잡하게 진행됨...
+다른 neuron으로 전달되는 값 자체는 neuron으로 그대로 전달되고 neuron에서 전달된 값으로 보정하는 식으로 진행됨
+그 값을 보관하는 곳이 LSTM 값들 중 일부는 삭제되고 더해지기도 함
+
+이전 neuron의 출력 값과 메모리상의 값을 neuron에 전달하고
+각각의 계산은 병렬로 진행됨(각자에 주는 영향 없이)
+메모리로 전달되는 값 자체는 계산이 진행되는 것 없이 각각 neuron의 값이 추가되는 형태로 전달되게 됨
+
+back propagation이 진행되더라도 메모리로 전달되는 값 자체는 계산에서 제외되었으므로 보정에 영향을 주는 값 그 자체는 변함없이 neuron에 전달되게 됨
