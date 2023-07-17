@@ -1,0 +1,19 @@
+Recurrent Neural Network
+
+AI는 크게 
+
+
+Artificial Neural Network : Regression, Classification
+Convolutional Neural Network : Computer vision
+Recurrent Neural Network : Time Series Analysis
+
+Self-Organizaing Maps : Feature Detection
+Deep Boltzmann Machines : Recommendation Systems
+AutoEncoders : Recommendation System
+
+RNN의 기본 개념은 
+input layer -> hidden layer -> output layer로 가는 과정의 일반 Neural Network에서
+hidden layer에서 도로 hidden layer로 가는 일정 되먹임 과정이 추가됨
+그러면 짧은 시간동안 들고 있는 memory에 기존 neuron들이 갖고 있던 파라미터 등을 들고 있다가 feedback에서 이 숫자들이 조정됨
+
+Long term memory는 neural network에서 통째로 들고 있는 오래도록 지속되어야 할 메모리고 recurrent neural network에서는 short-term memory에 neuron 자체에 대한 정보를 들고 있다가 output을 내는 과정이 끝나면 자기 자신에 feedback이 돌아옴
