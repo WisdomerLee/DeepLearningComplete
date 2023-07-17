@@ -17,4 +17,9 @@ weight 보정하는 값이 크면 : gradient를 이동하는 과정 자체가 �
 Exploding Gradient: 
 1.Truncated Backpropagation : backpropagation을 특정 단계에서 끊어주기! : 물론 이렇게하면 update되는 부분에 한계가 발생하게 됨
 2.Penalties : gradient에 penalty를 적용하기
-3.Gradient Clipping : 
+3.Gradient Clipping : gradient value의  최대 값, 최소 값이 있어 특정 값을 넘어가면 그 값으로 강제 고정
+
+Vanishing Gradient:
+1. Weight initialization : weight 값들을 다시 초기화 하여 gradient 값이 작아지는 것을 방지
+2. Echo State Networks: 이것도 vanishing gradient 문제를 해결하는 방법
+3. Long Short-Term Memory Networks(LSTMs) : 이 해결방법은 가장 널리 쓰이는 방법 중에 하나!!
