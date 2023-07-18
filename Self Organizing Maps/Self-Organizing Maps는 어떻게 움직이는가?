@@ -1,0 +1,13 @@
+ANN
+CNN
+RNN
+위의 셋은 모두 지도학습이 가능한 것들에 쓰임
+
+그러나 Self-Organizing Maps는 비지도학습...
+
+input layers들이 weight matrix들의 계산을 통해
+2D형태의 K neuron lattice형태로 결과가 나타남 lattice는 neuron들로 구성
+
+indicator들은 일종의 parameter들인데 
+
+SOM을 쓰면 해당 indicator들로 구성된 parameter들의 차원을 줄일 수 있음
