@@ -13,3 +13,17 @@ K-means algorithm은 어떻게 동작하는가?
 5. 다시 재조정된 centroid로 3의 과정을 반복함, 그리고 그 과정에서 재 배치가 일어나게 된다면? 4의 과정을 다시 반복, 그렇지 않으면 끝냄
 
 우리가 k를 지정하게 되면 그 갯수만큼의 cluster를 만들겠다는 뜻임
+
+================
+Random Initialization Trap
+centroid가 적절한 위치로 분배되면 K-means cluster는 매우 빠른 속도로 정리되는데
+만약 centroid가 엉뚱한 위치들로 분배된다면...?
+실제와 다른 형태의 cluster들로 정리되기도 함 : 혹은 사람이 생각한 것과 다른 형태로 정리됨
+centroid들은 random으로 생성되어 정리되기 시작하므로 종종 원치 않는 결과들이 나오기도 하는데 k-means 알고리즘으로 진행되는 동안에 이런 문제가 발생하는 것을 막기 어렵다는 것이 있음
+
+이 문제는 K-means++ algorithm으로 해결됨
+
+Choosing the right number of clusters
+:적절한 클러스터 갯수를 어떻게 정할 것인가??
+WCSS라는 파라미터 : 즉 가장 가까이 있는 centroid와 각 데이터들의 거리의 총합이 작아질 수록 알맞은 k의 갯수가 선택된 것
+가장 급격하게 줄어드는 k의 마지막 갯수의 wcss파라미터를 선택하면 적절한 k의 갯수가 됨...
