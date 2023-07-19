@@ -11,3 +11,17 @@ input layers들이 weight matrix들의 계산을 통해
 indicator들은 일종의 parameter들인데 
 
 SOM을 쓰면 해당 indicator들로 구성된 parameter들의 차원을 줄일 수 있음
+
+SOM을 Training시키는 단계
+
+1. dataset을 서로 독립적인(영향을 주지 않는) n개의 속성을 가진 것들로 시작
+2. 노드로 구성된 grid를 만드는데 각 grid는 n개의 속성에 weight vector를 가짐
+3. 처음에 weight vector의 값을 랜덤으로 초기화 하는데 0에 가깝게 부여한다(0이 되어서는 안 됨)
+4. dataset에서 random한 observation point 중에 하나를 선택
+5. euclidean distance(좌표 평면에서의 거리)를 계산함 :point와 neuron(network에 있는)들과의 거리
+6. point로부터 가장 가까운 거리의 뉴런을 선택. 이 뉴런을 winning node라고 부름
+7. winning node의 weight를 업데이트(point와 가까이 이동시키기 위해)
+8. Gaussian neighborhood function을 이용하여 winning node의 평균을 계산, 그리고 winning node의 이웃들의 weight도 업데이트 함(point에 가까이 하기 위해)
+   neighborhood radius : Gaussian function의 sigma값
+9. 1~5 과정 반복하고 각 observation이 끝나면 weight를 업데이트 처리(Reinforcement Learning), 혹은 obervation의 batch가 끝나면 weight 업데이트(Batch Learning)
+network가 커버하는 포인트의 neighborhood가 줄어드는 것이 끝날 때까지
