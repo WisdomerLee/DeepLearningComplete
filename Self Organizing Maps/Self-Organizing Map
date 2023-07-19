@@ -1,0 +1,19 @@
+
+Self Organizing Map : 
+
+input layer를 통해 들어온 입력들의 파라미터를 통해 계산된 무수히 많은 특성, 속성들이 neuron에 전달되고 그 neuron들로 구성된 layer가 다차원으로 펼쳐짐
+
+모든 input은 neuron에 각각 서로 neuron마다 다른 weight를 두고 계산이 됨
+
+각각의 distance를 계산하고
+
+best matching unit을 찾기
+
+각각의 centroid에서 지정된 radius에서 겹치는 node가 사라지도록 radius를 재조정하고
+
+SOMs 
+입력 세트의 다차원의 형태를 유지함
+쉽게 정의하기 어려운 관계를 파악하는데 도움이 됨
+지도 학습 없이 데이터를 분류함
+target vector가 없으므로 backpropagation이 없음!!!
+output node들 간에 어떤 연결도 없음
