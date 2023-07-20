@@ -1,0 +1,17 @@
+매우 최근에 나온 Deep Learning 모델 중 하나
+
+사용자 추천 시스템에 주로 쓰임 (지도 학습이 불가능)
+
+일반적인 ANN, CNN, RNN, Self-Organizing Maps는 모두 Input layer에서 output layer로의 데이터 흐름 방향성이 있다면
+
+Boltzmann Machine은 이 데이터의 흐름이 방향성이 없음
+양방향으로 서로 연결됨
+
+hidden nodes들이 여럿이 있고
+visible nodes들이 여럿이 있는데 
+각 노드들은 서로 데이터를 주고 받을 수 있는 관계에 있음
+
+그럼 Boltzmann Machine은 어떻게 학습을 하는가????
+서로 node들끼리 모두 양방향으로 연결되어있어 (별도의 output node가 없음) node들간의 weight들을 보정하게 됨
+Boltzmann Machine은 어떤 시스템에 대한 정보들... 온도, 습도 같은 것들을 측정하고 예측하는데에 쓰일 수 있음
+
