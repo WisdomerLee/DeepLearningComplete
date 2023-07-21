@@ -1,0 +1,17 @@
+Restricted Boltzmann Machine (RBM)
+
+일반적인 Boltzmann Machine은 모든 node들이 양방향으로 서로 연결되어있음
+그런데 node가 늘어나면 서로 연결되는 부분들이 급격하게 늘어나므로 서로 데이터를 주고 받으면서 weight를 재계산할 때 연산의 양 자체가 큰 폭으로 늘어나게 됨
+
+그래서 연산을 보다 쉽게 처리하기 위해 
+제한적으로 연결된 rbm이 등장하는데
+visible node들끼리는 서로 연결이 해제, hidden node들끼리는 서로 연결이 해제된 상태로 다른 node들간은 서로 연결이 된 상태임
+
+Boltzmann Machine은 recommendation system에 쓰이므로
+visible node들이 각각 영화 정보를 들고 있다고 하면
+그 입력된 정보들을 토대로 contrastive divergence라는 프로세스를 통해 학습을 진행하게 됨
+hidden layer들은 장르, 배우, 수상, 등의 내용을 담고 있음
+
+boltzmann machine에서 visible node에서 들어온 정보가 hidden node들로 입력되어 각각 어느 값을 갖게 되는데 그럼 visible node에 hidden node들이 어떻게 영향을 주게 되는가?
+hidden node들에 저장된 정보들로 역으로 visible node를 역으로 생성해냄 > 그리고 실제와 차이가 나게 되면?? weight를 보정하게 됨
+그리고 입력이 없는 정보들은 역으로 hidden node에 쌓인 정보를 토대로 좋아할지, 싫어할지를 점수를 매겨 사용자 추천에 쓰게 됨
