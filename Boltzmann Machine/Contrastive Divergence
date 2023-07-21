@@ -1,0 +1,19 @@
+Boltzmann Machine에서 학습할 때 쓰이는 방식
+
+weight를 어떻게 계산하는가?
+
+visible node로 hidden node에 정보가 입력되고 그 입력된 정보를 토대로 hidden node들에서 visible node의 정보를 역으로 계산함 : 그리고 차이가 난다면??
+모든 hidden node들이 visible node를 계산함 그리고 각각 계산된 것과 visible node의 정보와 차이가 나면?? weight가 바뀌어 계산됨
+그리고 다시 hidden node들에 정보가 감...
+
+이 과정이 생성된 visible node가 실제 visible node의 정보와 일치될 때까지 반복됨
+
+energy, data space의 그래프에서 energy가 최대한 낮은 상태로 이동시키는 방향으로 학습이 진행됨
+
+Boltzmann Machine에서 loss function을 energy function으로 쓰는 것이 차이 : 즉 energy state를 최소화 하는 형태로 학습이 진행
+그리고 각각 그 energy를 최소화 하는 과정에서 weight들이 달라지게 됨
+
+입력된 값에 가장 맞는 energy state를 정의하는 함수가 생성되고 > 해당 에너지를 가장 최소화 하려는 방향으로 학습이 진행
+
+A fast learning algorithm for deep belief nets (Geoffrey Hinton et al. 2006)
+https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf
