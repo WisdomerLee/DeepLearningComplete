@@ -1,0 +1,7 @@
+Deep Belief Network
+Deep Boltzmann Machine
+
+Deep Boltzmann Machine에서는 Deep Belief Network에서 있던 데이터 흐름의 방향성이 없음!
+
+Deep Boltzmann Machines by Ruslan Salakhutdinov et al. (2009?)
+http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf
