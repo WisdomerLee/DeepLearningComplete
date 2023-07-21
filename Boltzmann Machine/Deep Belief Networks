@@ -1,0 +1,24 @@
+Deep Belif Networks
+
+일반적인 Boltmann Machine은 모든 node들이 모두 연결되어있다면
+
+Deep Belif Network는 node들이 서로 약간의 거리를 두고 연결 됨
+hidden node들은 이웃한 hidden node들과 연결되고
+그 hidden node들 중에 visible node와 가장 가까운 node들만 visible node에 연결됨
+
+stack 형태로 hidden node들이 배치됨
+RBM이 stack형태로 배치된 것이라고 생각하면 쉬움....
+가장 최상위의 hidden node들은 방향성이 없으나
+나머지 hidden node들은 방향성이 존재함...
+
+wake-sleep algorithm의 형태로 학습이 진행
+
+wake : visible node에서 최종 hidden node로 데이터가 진행되어 정보가 입력되는 형태
+sleep : 최종 hidden node에서 visible node로 데이터가 내려오는 형태
+이것은 deep learning에서도 가장 최근에 나온 방식...
+다루는 곳이 많지 않음
+참고하려면
+
+Greedy Layer -Wise Training of Deep Networks by Yoshua Bengio et al.(2006)
+http://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf
+
