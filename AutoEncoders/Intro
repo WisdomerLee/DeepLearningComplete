@@ -1,0 +1,15 @@
+Boltzmann Machine으로 예측한 것은 좋다, 싫다?의 두 가지 답 중 어느 쪽을 고를지를 예측하는 형태였다면??
+
+Pytorch를 이용하여 stacked audoencoders를 이용하여...
+파이토치는 케라스보다 더 나아진 모델 형태..
+https://pytorch.org/docs/master/
+
+
+Auto Encoders
+Training of an Auto Encoder
+Overcomplete Hidden Layers
+Sparse Autoencoders
+Denoising Autoencoders
+Contractive Autoencoders
+Stacked Autoencoders
+Deep Autoencoders
