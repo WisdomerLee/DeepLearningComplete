@@ -1,0 +1,7 @@
+Visible Input Nodes
+Encoding과정을 거쳐 Hidden Nodes들로 전달
+Decoding 과정을 거쳐 Visible Output Nodes들로 전달
+
+hidden node 들에 부여되는 weight를 학습시켜야 함!!!
+hidden layer는 각각 상태가 있음!!
+그 상태들의 조합으로 visible output nodes들에 전달되는 값이 달라짐
