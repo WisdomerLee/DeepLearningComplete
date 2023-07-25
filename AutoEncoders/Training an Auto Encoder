@@ -1,0 +1,12 @@
+Auto Encoder는 어떻게 학습시키는가?
+
+1. 라인이 시작되는 곳에 사용자와 사용자가 관심있는 분야의 속성으로 된 array(배열)를 배치 (Observation)/ 각 cell은 사용자의 rating을 갖고 있음(사용자가 관심있는 분야 : 예를 들면 영화)
+2. 사용자의 정보를 네트워크에 입력하기. 입력 벡터x는 사용자가 관심있는 모든 분야(예를 들면 영화)에 평가한 값
+3. 입력 벡터x를 z벡터로 encoding!! z는 mapping function(sigmoid function 같은 것)으로 더 낮은 차원을 가짐 : z = f(Wx+b) W: vector의 weight벡터, b: bias
+4. z벡터는 출력 벡터 y로 decoding됨 y는 x와 같은 차원을 가짐, 
+5. reconstruction error d(x,y) = ||x-y||로 계산 (절대값) 이 오류를 최소화 하는 것이 목적
+6. back-propagation : error가 back-propagated되어 weight가 error가 얼마나 크냥 따라 보정됨. learning rate는 weight를 보정할 때 얼마나 많이 하느냐를 결정함
+7. 1~6과정을 반복 각 observation이 끝날 때마다 weight를 업데이트 하면 reinforcement learning, batch of observation이 끝날 때마다 하면 batch learning
+8. 모든 training set이 ANN을 통과하는 과정이 epoch(1~7과정), epoch를 반복
+
+1의 과정은 데이터 처리 과정임 : 데이터를 배열의 형태로 정리하여 Network에 전달하기 좋게 만들기!!!
