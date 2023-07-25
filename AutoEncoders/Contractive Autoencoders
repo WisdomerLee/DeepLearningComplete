@@ -1,0 +1,7 @@
+또다른 regularization technique
+
+back-propagation이 될 때 loss function에 penalty가 붙은 상태로 계산이 됨
+즉 차이 값이 그대로 들어가지 않고 일부 페널티들이 붙은 상태들로 계산되어 값이 복사되는 것을 방지함
+
+참고 링크
+http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Rifai_455.pdf
