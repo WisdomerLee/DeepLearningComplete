@@ -1,0 +1,6 @@
+Stacked AutoEncoder와 구분할 것!!
+
+stacked autoencoder는 autoencoder를 활용한 것이고
+deep autoencoders는 Restricted Boltzmann Machine이 stacked로 쌓인 것!!
+
+https://www.cs.toronto.edu/~hinton/science.pdf
