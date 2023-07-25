@@ -1,0 +1,8 @@
+Hidden layer가 여러 layer로 중첩되어 쌓인 형태!!
+encoding과정이 여럿!
+decoding과정은 한 번
+
+매우 효과적인 방법 중에 하나...
+
+참고 링크
+http://www.jmlr.org/papers/volum11/vincent10a/vincent10a.pdf
