@@ -1,0 +1,6 @@
+Auto Encoder의 다채로운 변형 중에 하나!
+Auto Encoder는 Deep Learning의 주요 모델 중에 하나로 널리 쓰이면서 많은 변형이 이루어짐
+
+만약 hidden layer를 늘리게 된다면?? 입력된 벡터보다 더 많은 node를 가진 hidden layer를 만든다면??
+몇몇 hidden layer는 입력 node를 복사한 형태로 들고 있을 수 있게 됨...
+그래서 학습이 의미없게 되는 형태가 나올 수 있게 됨!!
