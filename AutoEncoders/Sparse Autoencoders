@@ -1,0 +1,23 @@
+Sparse Autoencoders
+
+overcomplete hidden layer를 만드는 이유는 보다 많은 속성, 특성들을 뽑아내기 위함!!
+
+sparse autoencoder는 매우 매우 자주 쓰이는 것이고 자주 듣게 될 단어!
+
+overcomplete hidden layer를 쓰게 될 경우 발생할 수 있는 문제가 
+auto encoder에서는 input node와 output node의 숫자가 같아서 input된 값을 그대로 output node로 넘겨주는 문제가 생길 수 있음!!
+이것을 방지하기 위해서...
+
+sparse autoencoder??
+overcomplete hidden layer가 있는 상태에서 (즉 입력된 벡터의 요소보다 더 많은 hidden node들이 있을 때)
+sparse autoencoder
+regularization technique 중에 하나로
+over-fitting을 방지 (즉 복사해서 옮기게 되면 over-fitting이 되는데, over-fitting을 방지)
+
+sparse autoencoder는 한 번 노드를 통과시킬 때 hidden layer 중에 몇 개를 랜덤하게 선택하여 training을 진행함
+그리고 다음 training이 진행될 때는 또다른 hidden layer중에 몇 개를 랜덤하게 선택하여 training을 진행
+즉 모든 hidden layer가 training이 진행될 때 한 번에 쓰이지 않고 특정 몇 개씩 랜덤하게 선택되어 계산이 되므로 over-fitting이 방지됨..
+
+참고 링크 :
+http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders
+https://arxiv.org/pdf/1312.5663.pdf
