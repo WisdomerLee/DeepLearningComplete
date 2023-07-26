@@ -1,1 +1,11 @@
 template 만들어두기!!!
+
+Data Preprocessing Tool
+Importing the libraries
+Importing the dataset
+Taking care of missing data
+Encoding categorical data - Encoding the Independent Variable / Encoding the Dependent Variable
+Splitting the dataset into the Training set and Test set
+Feature Scaling
+
+커다란 얼개만 보았을 때 위의 단계로 진행됨
