@@ -1,0 +1,11 @@
+답이 2가지로 나뉘어지는 0,1로만 구성되는 것들의 경우엔 linear regression이 잘 들어맞지 않음..
+그럼 이것은 어떻게 해결해야 하는가??
+
+sigmoid function 특정 값을 기준으로 0과 1에 가까워지는 함수
+$$p = {1 \over {1+e^{-y}}}$$
+
+ln(p/(1-p)) = b0+b1x
+의 형태로 regression 형태르ㄹ 변형할 수 있음!
+
+log가 들어가서 logistic regression이라고 부름...
+
