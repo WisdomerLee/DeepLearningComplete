@@ -1,0 +1,22 @@
+보다 자세한 내용은 아래의 링크 참고
+http://www.superdatascience.com/blogs/the-ultimate-guide-to-regression-classification
+
+linear regression
+y = bx+ a 
+
+y : dependent variable(DV)
+x : independent variable(IV)
+
+data의 경향성이 선형적인 관계에 있을 때 데이터의 상관관계를 나타내는 그래프!
+
+b: dependent variable이 independent variable이 변화하는 정도에 따라 얼마나 크게 영향을 받는가?를 나타내는 값
+a: 보정 값
+
+2차원의 평면에서 linear regression으로 표현했을 때
+실제 data가 linear regression에서 떨어진 값을 제곱하여 합 한 뒤에 그 값이 최소가 되도록 b와 a를 보정함...
+
+Multiple Linear Regression
+: 이러한 linear regression을 하나의 선이 아닌 여러 선의 조합으로 만들어.. 경향을 예측하는 것
+y = b0 + b1x1 + b2x2+...+bnxn
+물론 이것은 행렬의 곱으로 표현하면 보다 간단히 처리할 수 있음!
+matrix의 곱 > linear algebra가 지식으로 필요한 이유
